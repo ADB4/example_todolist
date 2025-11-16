@@ -6,7 +6,7 @@ COPY build.gradle settings.gradle ./
 COPY gradle.properties ./
 COPY src ./src
 
-RUN gradle build --no-daemon -x test
+RUN gradle build --no-daemon -x tes\t
 
 FROM eclipse-temurin:21-jre-alpine
 
