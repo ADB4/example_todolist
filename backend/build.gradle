@@ -9,6 +9,7 @@ version = '0.0.1-SNAPSHOT'
 
 java {
     sourceCompatibility = '17'
+    targetCompatibility = '17'
 }
 
 configurations {
@@ -29,12 +30,12 @@ dependencies {
     implementation 'io.jsonwebtoken:jjwt-api:0.12.3'
     implementation 'io.jsonwebtoken:jjwt-impl:0.12.3'
     implementation 'io.jsonwebtoken:jjwt-jackson:0.12.3'
-    
+
     compileOnly 'org.projectlombok:lombok'
     runtimeOnly 'org.postgresql:postgresql'
-    
+
     annotationProcessor 'org.projectlombok:lombok'
-    
+
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     testImplementation 'org.springframework.security:spring-security-test'
 }
